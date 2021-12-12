@@ -383,7 +383,6 @@ function buildBettingBoard(){
 					this.setAttribute('class', curClass + ' cdChipActive');
 				}
 				wager = parseInt(chip.childNodes[0].innerText);
-				console.log(wager);
 			}else{
 				bankValue = bankValue + currentBet;
 				currentBet = 0;
@@ -493,13 +492,11 @@ function setBet(e, n, t, o){
 			chipSpan.innerText = wager;
 			chip.append(chipSpan);
 			e.append(chip);
-			console.log(bet);
 		}
 	}
 }
 
 function spin(){
-	console.log(numbersBet);
 	var winningSpin = Math.floor(Math.random() * 36);
 	spinWheel(winningSpin);
 	setTimeout(function(){
