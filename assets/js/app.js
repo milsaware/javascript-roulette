@@ -497,7 +497,7 @@ function setBet(e, n, t, o){
 }
 
 function spin(){
-	var winningSpin = Math.floor(Math.random() * 36);
+	var winningSpin = Math.floor(Math.random() * 37);
 	spinWheel(winningSpin);
 	setTimeout(function(){
 		if(numbersBet.includes(winningSpin)){
